@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+span.page{
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.pager{
+    left: 0;;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #000;
+    margin:100px auto;
+    text-align: center;
+}
+
+
+.pager a{
+    font-size: 12px;
+    color: rgb(89, 184, 225);
+    cursor: pointer;
+    padding:7px;
+    border: 1px solid #eee;
+    margin: 5px;
+    user-select: none;
+}
+
+a.active{
+    color: #f40;
+    cursor: text;
+    border: none;
+}
+
+a.disabled{
+    color: gray;
+    cursor: not-allowed;
+}
+
+.pager span{
+    font-size: 14px;
+    margin-left: 15px;
+}

@@ -1,0 +1,162 @@
+/* 清除margin，padding */
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* 设置最外层容器 */
+.container{
+    width: 1000px;
+    margin: 100px auto;
+}
+
+/* 设置表格样式 */
+table{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+/* 设置商品展示表格 */
+.product tr{
+    width: 100%;
+    border: 1px dashed #ddd;
+}
+
+/* 设置hover效果 */
+.product tr:hover,.product tr:active{
+    background-color: #fffbf0;
+}
+
+/* 设置第一列 */
+.product td:nth-of-type(1),
+.selected td:nth-of-type(1){
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product td:nth-of-type(1) img,
+.selected td:nth-of-type(1) img{
+    width: 82px;
+    height: 82px;
+    background: #f4f4f4;
+    border: 1px solid #eaeaea;
+}
+
+/* 设置第二列 */
+.product td:nth-of-type(2){
+    width: 300px;
+    text-align: left;
+}
+/* 设置标题文字 */
+.product td:nth-of-type(2) p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* 设置颜色选项容器 */
+.product td:nth-of-type(2) ul{
+    display: flex;
+    align-items: center;
+}
+/* 设置颜色选项 */
+.product td:nth-of-type(2) li{
+    width: 54px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* 设置颜色选中效果 */
+.product td:nth-of-type(2) li.active{
+    background: url(./images/ico_02.gif) no-repeat;
+    background-position: right bottom;
+    border:2px solid #b4a078;
+}
+
+/* 设置单价 */
+.product td:nth-of-type(3){
+    width: 200px;
+    color: #d90808;
+    text-align: center;
+}
+
+/* 设置库存变更区域 */
+.product td:nth-of-type(4){
+    width: 200px;
+    text-align: center;
+    font-size: 0px;
+}
+/* - , + */
+.product td:nth-of-type(4) span{
+    font-size: 14px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* 库存量 */
+.product td:nth-of-type(4) strong{
+    font-size: 14px;
+    width: 58px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+}
+
+/* 加入购物车区域 */
+.product td:nth-of-type(5){
+    width: 200px;
+    text-align: center;
+}
+.product td:nth-of-type(5) button{
+    background: #cb4a61;
+    border: none;
+    padding: 20px 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.selected{
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* 设置已选中商品的表格 */
+.selected thead{
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    
+}
+
+.selected th{
+    height: 50px;
+    color: #000;
+    text-align: center;
+}
+
+/* 设置应付金额样式 */
+.selected th strong{
+    font-size: 1.8em;
+    color: #d90808;
+    vertical-align: -4px;
+}
+
+.selected tr{
+    border: 1px dashed #ddd; 
+    text-align: center;
+    color: #999;
+}

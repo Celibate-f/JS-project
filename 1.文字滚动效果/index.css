@@ -1,0 +1,32 @@
+.container{
+    background: lightskyblue;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+h1{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+h1::after{
+    content: "|";
+    color: gray;
+    font-size: 1px;
+    padding-left: 15px;
+}
+
+.list{
+    list-style: none;
+    height: 30px;
+    overflow: hidden;
+}
+
+.list li{
+    height: 30px;
+    line-height: 30px;
+}

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+.menu-container{
+    width: 200px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.menu-container h2{
+    background: lightblue;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.submenu{
+    background: #e0f0f7;
+    padding: 0 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.submenu li{
+    height: 30px;
+}
+
+.menu{
+    margin: 20px 0;
+}

@@ -1,0 +1,58 @@
+.container {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+/* 图片样式 */
+.left{
+    width: 350px;
+}
+.left .img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: url("./images/bg.gif") no-repeat;
+    background-position: center bottom;
+}
+
+.img .changeImg{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* 文字样式 */
+.left .text p{
+    text-align: center;
+    
+}
+
+/* 右侧样式 */
+.right{
+    /* 设置内部元素居中对齐 */
+    width: 700px;
+    display: grid;
+    grid: repeat(20, 35px) / repeat(4,130px);
+    /* 按列浮动 */
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.right div{
+    width: 130px;
+    height: 35px;
+    display: flex;
+    align-items:center ;
+}
+
+.right div img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}

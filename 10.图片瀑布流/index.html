@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        图片瀑布流
+    </title>
+    <style>
+        #container{
+            width: 90%;
+            height: 1000px;
+            border: 2px solid;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script src="./waterFall.js"></script>
+    <script>
+        const srcs = new Array(40);
+       for (let index = 0; index < srcs.length; index++) {
+        srcs[index] = `./img/${index}.jpg`
+       };
+        myPlugin.createWaterFall({
+            // 间隔
+            imgGap:15,
+            // 图片路径
+            imgSrcs:srcs,
+            container:document.getElementById("container"),
+        });
+    </script>
+</body>
+</html>
